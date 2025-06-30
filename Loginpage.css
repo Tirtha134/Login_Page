@@ -1,1 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: skyblue;
+}
+
+.wrapper {
+    width: 380px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper .title {
+    line-height: 80px;
+    background: blueviolet;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wrapper form {
+    padding: 30px 20px 25px 20px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightsteelblue;
+    font-size: 15px;
+}
+
+form .row input:focus {
+    border-color: black;
+    box-shadow: 0 0 5px rgb(118, 0, 139);
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: black;
+    font-size: 18px;
+    background-color: aqua;
+    border: 1px solid #16a085;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.wrapper form .pass {
+    margin: -8px 0 17px 0;
+}
+
+.wrapper form .pass a {
+    color: darkblue;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button input {
+    color: #fff;
+    padding-left: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(118, 0, 139);
+    border: 1px solid #16a085;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .button input:hover {
+    background: skyblue;
+    color: black;
+}
+
+/* Simulated animation on button press */
+form .button input:active {
+    transform: scale(0.95);
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper form .signup-link a {
+    color: darkblue;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .wrapper .title {
+        font-size: 20px;
+    }
+
+    .wrapper form .row input {
+        font-size: 14px;
+    }
+
+    .wrapper form .signup-link a {
+        font-size: 15px;
+    }
+}
